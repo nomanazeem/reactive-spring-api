@@ -3,11 +3,20 @@ reactive spring api
 
 
 # Call endpoint
-http://localhost:8080/greeting/emitUser
 
+# Customer interactive vs reactive
 
-# Result 
+# Interactive - Get response when data finished
+http://localhost:8080/customers/interactive
 
+# Get response when data is available (Streams)
+
+http://localhost:8080/customers/streams
+
+# Users Streams data example
+http://localhost:8080/users/emitUser
+
+# Result
 data:{"id":0,"name":"Test User 0"}
 
 data:{"id":1,"name":"Test User 1"}
