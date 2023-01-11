@@ -30,7 +30,7 @@ public class CustomerController {
         return customerService.getAllCustomers();
     }
 
-    @GetMapping("/streams")
+    @GetMapping(value="/streams", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public Flux<Customer> getAllCustomersStream(){
         return customerService.getAllCustomersStream();
     }
